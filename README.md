@@ -1,4 +1,3 @@
-# PIPSI1-projekt
 Skład grupy: <br>
 Paweł Wyszyński 42094 pawel.wyszynski@studenci.collegiumwitelona.pl <br>
 Michał Turowski 42088 michal.turowski@studenci.collegiumwitelona.pl <br>
