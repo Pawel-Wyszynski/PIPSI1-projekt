@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\HelloWorldController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome2');
 });
+Route::get('/hello',[HelloWorldController::class, 'show']);
+
