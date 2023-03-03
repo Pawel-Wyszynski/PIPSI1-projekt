@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
-        'name' => 'laravel/laravel',
+        'name' => 'mechaniczne-ksztalty/sklep-motoryzacyjny',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'e3d8a236c75bc67428f76db6362d93c6c3bdd308',
+        'reference' => 'be1d7558976a62b1e4cb99788b09cfca3831e199',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -370,15 +370,6 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-        'laravel/laravel' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => 'e3d8a236c75bc67428f76db6362d93c6c3bdd308',
-            'type' => 'project',
-            'install_path' => __DIR__ . '/../../',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
         'laravel/pint' => array(
             'pretty_version' => 'v1.6.0',
             'version' => '1.6.0.0',
@@ -466,6 +457,15 @@
             'reference' => 'ff6248ea87a9f116e78edd6002e39e5128a0d4dd',
             'type' => 'library',
             'install_path' => __DIR__ . '/../league/mime-type-detection',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'mechaniczne-ksztalty/sklep-motoryzacyjny' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => 'be1d7558976a62b1e4cb99788b09cfca3831e199',
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
