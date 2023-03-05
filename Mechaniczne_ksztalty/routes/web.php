@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HelloWorldController;
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,7 +17,9 @@ use App\Http\Controllers\HelloWorldController;
 Route::get('/', function () {
     return view('welcome2');
 });
-Route::get('/hello',[HelloWorldController::class, 'show']);
+
+Route::get('/users/list', [UserController::class, 'index'])->middleware('auth');
+Route::get('/hello', [HelloWorldController::class, 'show']);
 
 
 Auth::routes();
