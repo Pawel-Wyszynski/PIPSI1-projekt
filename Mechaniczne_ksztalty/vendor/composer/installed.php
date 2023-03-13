@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'mechaniczne-ksztalty/sklep-motoryzacyjny',
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
-        'reference' => 'e90a31d4eb9ae8d44210fc4bf06534931996beeb',
+        'pretty_version' => '1.0.0+no-version-set',
+        'version' => '1.0.0.0',
+        'reference' => NULL,
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -461,9 +461,9 @@
             'dev_requirement' => false,
         ),
         'mechaniczne-ksztalty/sklep-motoryzacyjny' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => 'e90a31d4eb9ae8d44210fc4bf06534931996beeb',
+            'pretty_version' => '1.0.0+no-version-set',
+            'version' => '1.0.0.0',
+            'reference' => NULL,
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
