@@ -36,17 +36,29 @@
 @section('javascript')
     $(function() {
         $('.delete').click(function() {
-            $.ajax({
+
+          Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+}).then((result) => {
+  if (result.isConfirmed) {
+    $.ajax({
                 method: "DELETE",
                 url: "http://shop.test/users/" + $(this).data("id")
-                //data: { id: $(this).data("id") }
-            })
-            .done(function(response) {
+              })
+              .done(function(response) {
                 window.location.reload();
             })
             .fail(function(response) {
-              alert("ERROR");
+              Swal.fire('Oops...','Something went wrong!','error');
             });
-        });
+          }
+        })
+      });
     });
 @endsection
