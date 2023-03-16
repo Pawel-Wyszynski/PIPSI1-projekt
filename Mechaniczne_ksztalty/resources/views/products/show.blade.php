@@ -37,6 +37,13 @@
                                 <input id="price" type="number" step="0.01" min="0" class="form-control" name="price" value="{{$product->price}}" disabled>
                             </div>
                         </div>
+                        <div class="form-group row justify-content-center">
+                        <div class="col-md-6">
+                        @if(!is_null($product->image_path))
+                        <img src="{{asset('storage/' .$product->image_path)}}" alt="Zdjęcie produktu">
+                        @endif
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
