@@ -40,7 +40,7 @@
                         <div class="form-group row justify-content-center">
                         <div class="col-md-6">
                         @if(!is_null($product->image_path))
-                        <img src="{{asset('storage/' .$product->image_path)}}" alt="Zdjęcie produktu">
+                        <img src="{{asset('storage/' .$product->image_path)}}" alt="Zdjęcie produktu" class="img-fluid mx-auto d-block" height="200" width="200">
                         @endif
                         </div>
                     </div>
