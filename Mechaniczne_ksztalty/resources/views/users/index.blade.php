@@ -6,11 +6,11 @@
 <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Email</th>
-      <th scope="col">Name</th>
-      <th scope="col">Surname</th>
-        <th scope="col">PhoneNumber</th>
-      <th scope="col">Actions</th>
+      <th scope="col">{{ __('Email Address') }}</th>
+      <th scope="col">{{ __('Name') }}</th>
+      <th scope="col">{{ __('Surname') }}</th>
+        <th scope="col">{{ __('Phone number') }}</th>
+      <th scope="col">{{ __('Actions') }}</th>
     </tr>
   </thead>
   <tbody>
@@ -38,13 +38,14 @@
         $('.delete').click(function() {
 
           Swal.fire({
-            title: 'Are you sure?',
-            text: "You won't be able to revert this!",
+            title: '{{ __('Are you sure?') }}',
+            text: "{{ __('You won\'t be able to revert this!') }}",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, delete it!'
+            confirmButtonText: '{{ __('Yes') }}',
+            cancelButtonText: '{{ __('Cancel') }}'
 }).then((result) => {
   if (result.isConfirmed) {
     $.ajax({

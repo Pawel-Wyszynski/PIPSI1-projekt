@@ -4,11 +4,11 @@
 <div class="container">
   <div class="row">
     <div class="col-6">
-        <h1>Products List</h1>
+        <h1>{{ __('Products list') }}</h1>
     </div>
     <div class="col-6">
         <a class="d-grid gap-2 d-md-flex justify-content-md-end" href="{{route('products.create')}}">
-        <button type="button" class="btn btn-primary">Add</button>
+        <button type="button" class="btn btn-primary">{{ __('Add') }}</button>
         </a>
     </div>
   </div>
@@ -17,11 +17,11 @@
 <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Name</th>
-      <th scope="col">Description</th>
-      <th scope="col">Amount</th>
-        <th scope="col">Price</th>
-      <th scope="col">Actions</th>
+      <th scope="col">{{ __('Product name') }}</th>
+      <th scope="col">{{ __('Description') }}</th>
+      <th scope="col">{{ __('Amount') }}</th>
+        <th scope="col">{{ __('Price') }}</th>
+      <th scope="col">{{ __('Actions') }}</th>
     </tr>
   </thead>
   <tbody>
@@ -60,13 +60,14 @@
         $('.delete').click(function() {
 
           Swal.fire({
-            title: 'Are you sure?',
-            text: "You won't be able to revert this!",
+            title: '{{ __('Are you sure?') }}',
+            text: "{{ __('You won\'t be able to revert this!') }}",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, delete it!'
+            confirmButtonText: '{{ __('Yes') }}',
+            cancelButtonText: '{{ __('Cancel') }}'
 }).then((result) => {
   if (result.isConfirmed) {
     $.ajax({

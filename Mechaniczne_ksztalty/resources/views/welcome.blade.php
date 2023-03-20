@@ -27,14 +27,14 @@
                         </div>
                       </div>
                       @empty
-                      <div>Nie znaleziono produktów</div>
+                      <div>{{ __('No Results Found.') }}</div>
                       @endforelse
                       {{ $products->appends(request()->input())->links() }}
                     </div>
                   </div>
                 </div>
                 <div class="col-md-4 order-md-1 col-lg-3 sidebar-filter">
-                <h3 class="mt-0 mb-5">Products <span class="text-primary">{{count($products)}}</span></h3>
+                <h3 class="mt-0 mb-5">{{ __('Products') }} <span class="text-primary">{{count($products)}}</span></h3>
                   
                   </div>
                   
