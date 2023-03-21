@@ -35,7 +35,23 @@
                 </div>
                 <div class="col-md-4 order-md-1 col-lg-3 sidebar-filter">
                 <h3 class="mt-0 mb-5">{{ __('Products') }} <span class="text-primary">{{count($products)}}</span></h3>
-                  
+                <h6 class="text-uppercase font-weight-bold mb-3">Kategorie</h6>
+                  <ul>
+                  @foreach($categories as $category)
+                  <div class="mt-2 mb-2 pl-2">
+                  <li><button type="button" class="btn btn-light">{{$category->name}}</button></li>
+                  </div>
+                  @endforeach
+                  </ul>
+                  <h6 class="text-uppercase font-weight-bold mb-3">Cena</h6>
+                  <ul>
+                  <div class="mt-2 mb-2 pl-2">
+                  <li><button type="button" class="btn btn-light">Rosnąco</button></li>
+                  </div>
+                  <div class="mt-2 mb-2 pl-2">
+                  <li><button type="button" class="btn btn-light">Malejąco</button></li>
+                  </div>
+                  </ul>
                   </div>
                   
                 </div>
