@@ -21,7 +21,7 @@
       <th scope="col">{{ __('Description') }}</th>
       <th scope="col">{{ __('Amount') }}</th>
         <th scope="col">{{ __('Price') }}</th>
-        <th scope="col">{{ __('Fields category') }}</th>
+        <th scope="col">{{ __('Category') }}</th>
       <th scope="col">{{ __('Actions') }}</th>
     </tr>
   </thead>

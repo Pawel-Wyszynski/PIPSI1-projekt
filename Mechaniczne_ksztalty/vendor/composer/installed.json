@@ -26,7 +26,7 @@
             },
             "time": "2023-02-15T13:05:41+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "ArchTech\\Enums\\": "src/"
@@ -137,7 +137,7 @@
                     "dev-main": "3.x-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Composer\\Semver\\": "src"
@@ -474,7 +474,7 @@
             },
             "time": "2022-10-10T22:02:52+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "DragonCode\\Contracts\\": "src"
@@ -549,7 +549,7 @@
             },
             "time": "2022-04-21T12:22:41+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "DragonCode\\PrettyArray\\": "src"
@@ -653,7 +653,7 @@
                     }
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "DragonCode\\Support\\": "src"
@@ -1641,7 +1641,7 @@
                     ]
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "LaravelLang\\Attributes\\": "src"
@@ -1714,7 +1714,7 @@
             },
             "time": "2023-02-17T12:46:13+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -1798,7 +1798,7 @@
                     ]
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "LaravelLang\\HttpStatuses\\": "src"
@@ -1874,7 +1874,7 @@
                     ]
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "LaravelLang\\Lang\\": "src"
@@ -1961,7 +1961,7 @@
                     ]
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "files": [
                     "helper.php"
@@ -7932,7 +7932,7 @@
                     "url": "https://github.com/symfony/polyfill"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "files": [
                     "bootstrap.php"
