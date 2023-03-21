@@ -73,7 +73,7 @@
                                 <select id="category" class="form-control @error('category') is-invalid @enderror" name="category_id">
                                     <option value="">Brak</option>
                                     @foreach ($categories as $category)
-                                        <option value="{{ $category->id }} @if(!is_null($product->$category) && $product->category->id == $category->id) selected @endif">{{ $category->name }}</option>
+                                        <option value="{{ $category->id }} @if($product->isSelectedCategory($category->id)) selected @endif">{{ $category->name }}</option>
                                     @endforeach
                                 </select>
 
