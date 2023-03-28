@@ -5,6 +5,7 @@ use App\Http\Controllers\HelloWorldController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\ShopController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +32,7 @@ Route::get('/products/edit/{product}', [ProductController::class, 'edit'])->name
 Route::post('/products/{product}', [ProductController::class, 'update'])->name('products.update')->middleware('auth');
 Route::delete('/products/{product}', [ProductController::class, 'destroy'])->middleware('auth');
 
+Route::get('/shop', [ShopController::class, 'index'])->name('shop.index');
 
 Route::get('/users/list', [UserController::class, 'index'])->middleware('auth');
 Route::delete('/users/{id}', [UserController::class, 'destroy'])->middleware('auth');

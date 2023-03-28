@@ -3,7 +3,7 @@
         'name' => 'mechaniczne-ksztalty/sklep-motoryzacyjny',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'de5c1d19dd301e5f4bc81823ea34acbfbd2f4645',
+        'reference' => '148f8e84d1ed54e421856bb067e7f6b0af90df36',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -553,7 +553,7 @@
         'mechaniczne-ksztalty/sklep-motoryzacyjny' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'de5c1d19dd301e5f4bc81823ea34acbfbd2f4645',
+            'reference' => '148f8e84d1ed54e421856bb067e7f6b0af90df36',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

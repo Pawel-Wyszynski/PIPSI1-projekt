@@ -39,17 +39,17 @@
                   <ul>
                   @foreach($categories as $category)
                   <div class="mt-2 mb-2 pl-2">
-                  <li><button type="button" class="btn btn-light">{{$category->name}}</button></li>
+                  <li><a href="{{route('shop.index',['category'=>$category->name])}}"><button type="button" class="btn btn-light">{{$category->name}}</button></a></li>
                   </div>
                   @endforeach
                   </ul>
                   <h6 class="text-uppercase font-weight-bold mb-3">Cena</h6>
                   <ul>
                   <div class="mt-2 mb-2 pl-2">
-                  <li><button type="button" class="btn btn-light">Rosnąco</button></li>
+                  <li><a href="{{route('shop.index',['category'=>request()->category, 'sort'=>'low_high'])}}"><button type="button" class="btn btn-light">Rosnąco</button></a></li>
                   </div>
                   <div class="mt-2 mb-2 pl-2">
-                  <li><button type="button" class="btn btn-light">Malejąco</button></li>
+                  <li><a href="{{route('shop.index',['category'=>request()->category, 'sort'=>'high_low'])}}"><button type="button" class="btn btn-light">Malejąco</button></a></li>
                   </div>
                   </ul>
                   </div>
