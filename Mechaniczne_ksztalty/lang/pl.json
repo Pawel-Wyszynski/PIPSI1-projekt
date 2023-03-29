@@ -1112,6 +1112,9 @@
     "Edit product": "Edycja produktu",
     "Products list": "Lista produktów",
     "Are you sure?": "Jesteś pewien?",
-    "You won't be able to revert this!": "Nie będziesz mógł tego cofnąć!",
-    "Product preview": "Podgląd produktu"
+    "You will not be able to revert this!": "Nie będziesz mógł tego cofnąć!",
+    "Product preview": "Podgląd produktu",
+    "Categories": "Kategorie",
+    "Ascending": "Rosnąco",
+    "Descending": "Malejąco"
 }

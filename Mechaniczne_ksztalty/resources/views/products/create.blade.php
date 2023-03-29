@@ -71,7 +71,7 @@
 
                             <div class="col-md-6">
                                 <select id="category" class="form-control @error('category') is-invalid @enderror" name="category_id">
-                                    <option value="">Brak</option>
+                                    <option value="">{{ __('None') }}</option>
                                     @foreach ($categories as $category)
                                         <option value="{{ $category->id }}">{{ $category->name }}</option>
                                     @endforeach

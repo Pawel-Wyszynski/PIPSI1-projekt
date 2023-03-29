@@ -35,7 +35,7 @@
                 </div>
                 <div class="col-md-4 order-md-1 col-lg-3 sidebar-filter">
                 <h3 class="mt-0 mb-5">{{ __('Products') }} <span class="text-primary">{{count($products)}}</span></h3>
-                <h6 class="text-uppercase font-weight-bold mb-3">Kategorie</h6>
+                <h6 class="text-uppercase font-weight-bold mb-3">{{ __('Categories') }}</h6>
                   <ul>
                   @foreach($categories as $category)
                   <div class="mt-2 mb-2 pl-2">
@@ -43,13 +43,13 @@
                   </div>
                   @endforeach
                   </ul>
-                  <h6 class="text-uppercase font-weight-bold mb-3">Cena</h6>
+                  <h6 class="text-uppercase font-weight-bold mb-3">{{ __('Price') }}</h6>
                   <ul>
                   <div class="mt-2 mb-2 pl-2">
-                  <li><a href="{{route('shop.index',['category'=>request()->category, 'sort'=>'low_high'])}}"><button type="button" class="btn btn-light">Rosnąco</button></a></li>
+                  <li><a href="{{route('shop.index',['category'=>request()->category, 'sort'=>'low_high'])}}"><button type="button" class="btn btn-light">{{ __('Ascending') }}</button></a></li>
                   </div>
                   <div class="mt-2 mb-2 pl-2">
-                  <li><a href="{{route('shop.index',['category'=>request()->category, 'sort'=>'high_low'])}}"><button type="button" class="btn btn-light">Malejąco</button></a></li>
+                  <li><a href="{{route('shop.index',['category'=>request()->category, 'sort'=>'high_low'])}}"><button type="button" class="btn btn-light">{{ __('Descending') }}</button></a></li>
                   </div>
                   </ul>
                   </div>
