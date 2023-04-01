@@ -1,4 +1,4 @@
 .idea/
 ./Mechaniczne_ksztalty/.idea/
 ./Mechaniczne_ksztalty/vendor/
-./Mechaniczne_ksztalty/.env
+./Mechaniczne_ksztalty/*.env
