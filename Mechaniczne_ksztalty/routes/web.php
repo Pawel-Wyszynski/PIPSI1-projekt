@@ -25,10 +25,10 @@ Route::get('/', function () {
 Route::get('/', [WelcomeController::class, 'index'])->name('welcome');
 
 Route::middleware(['auth', 'verified'])->group(function() {
-    Route::resource('products', ProductController::class);
+    Route::resource('products', ProductController::class)->middleware('can:isAdmin');
 
-    Route::get('/users/list', [UserController::class, 'index'])->middleware('auth');
-    Route::delete('/users/{id}', [UserController::class, 'destroy'])->middleware('auth');
+    Route::get('/users/list', [UserController::class, 'index'])->middleware('can:isAdmin');
+    Route::delete('/users/{id}', [UserController::class, 'destroy'])->middleware('can:isAdmin');
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/shop', [ShopController::class, 'index'])->name('shop.index');
 });
