@@ -3,13 +3,22 @@
         'name' => 'mechaniczne-ksztalty/sklep-motoryzacyjny',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '5e9562fdca5b599b7970bb77076de6e7d0d43298',
+        'reference' => 'becc24c3e41882135c58c3e41acfe29d92c1e930',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
+        'andreiio/blade-remix-icon' => array(
+            'pretty_version' => '1.2.0',
+            'version' => '1.2.0.0',
+            'reference' => 'f88ed4ed15ead76d33056c97cc156d94ae53fcb3',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../andreiio/blade-remix-icon',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'archtechx/enums' => array(
             'pretty_version' => 'v0.3.2',
             'version' => '0.3.2.0',
@@ -18,6 +27,15 @@
             'install_path' => __DIR__ . '/../archtechx/enums',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'blade-ui-kit/blade-icons' => array(
+            'pretty_version' => '1.5.1',
+            'version' => '1.5.1.0',
+            'reference' => 'b2a80ff2a26641f64bfee48ad0d2a922ce781228',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../blade-ui-kit/blade-icons',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'brick/math' => array(
             'pretty_version' => '0.10.2',
@@ -48,6 +66,15 @@
             'replaced' => array(
                 0 => '*',
             ),
+        ),
+        'davidhsianturi/blade-bootstrap-icons' => array(
+            'pretty_version' => 'v1.4.0',
+            'version' => '1.4.0.0',
+            'reference' => '255040a0058683dd5a0fd36dfa0857a91a95137f',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../davidhsianturi/blade-bootstrap-icons',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'dflydev/dot-access-data' => array(
             'pretty_version' => 'v3.0.2',
@@ -553,7 +580,7 @@
         'mechaniczne-ksztalty/sklep-motoryzacyjny' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '5e9562fdca5b599b7970bb77076de6e7d0d43298',
+            'reference' => 'becc24c3e41882135c58c3e41acfe29d92c1e930',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
