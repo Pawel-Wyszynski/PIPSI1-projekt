@@ -50,7 +50,7 @@ class ProductController extends Controller
         $product->image_path = Storage::disk('public')->put('products', $request->file('image'));
         }
         $product->save();
-        return redirect(route('products.index'));
+        return redirect(route('products.index'))->with('status','Produkt został zapisany!');
     }
 
     /**
@@ -94,7 +94,7 @@ class ProductController extends Controller
             $product->image_path = Storage::disk('public')->put('products', $request->file('image'));
         }
         $product->save();
-        return redirect(route('products.index'));
+        return redirect(route('products.index'))->with('status','Produkt został zapisany!');
     }
 
     /**
