@@ -23,8 +23,11 @@
                             <h5 class="card-price small">
                               <i>PLN {{$product->price}} </i>
                             </h5>
+                            <button class="btn btn-success btn-sm add-cart-button"data-id="{{$product->id}}">
+                              <i class="fas fa-cart-plus"></i>Dodaj do koszyka</button>
                           </div>
                         </div>
+                        
                       </div>
                       @empty
                       <div>{{ __('No Results Found.') }}</div>
