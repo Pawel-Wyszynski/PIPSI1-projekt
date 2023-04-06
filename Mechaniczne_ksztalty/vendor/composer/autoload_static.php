@@ -14,16 +14,15 @@ class ComposerStaticInit58354dfdb16c6b8aa418f6d9959355fe
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
-        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
+        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '6264df2020ce3a5f27360e1523541f0e' => __DIR__ . '/..' . '/laravel-lang/publisher/helper.php',
         '35a6ad97d21e794e7e22a17d806652e4' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Functions.php',
         '3bd81c9b8fcc150b69d8b63b4d2ccf23' => __DIR__ . '/..' . '/spatie/flare-client-php/src/helpers.php',
         '09f6b20656683369174dd6fa83b7e5fb' => __DIR__ . '/..' . '/symfony/polyfill-uuid/bootstrap.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
-        '29ffe97919493792170d47eb03a68da9' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/helpers.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
@@ -166,7 +165,6 @@ class ComposerStaticInit58354dfdb16c6b8aa418f6d9959355fe
             'Doctrine\\Common\\Lexer\\' => 22,
             'Dflydev\\DotAccessData\\' => 22,
             'DeepCopy\\' => 9,
-            'Davidhsianturi\\BladeBootstrapIcons\\' => 35,
             'Database\\Seeders\\' => 17,
             'Database\\Factories\\' => 19,
         ),
@@ -179,13 +177,11 @@ class ComposerStaticInit58354dfdb16c6b8aa418f6d9959355fe
         'B' => 
         array (
             'Brick\\Math\\' => 11,
-            'BladeUI\\Icons\\' => 14,
         ),
         'A' => 
         array (
             'ArchTech\\Enums\\' => 15,
             'App\\' => 4,
-            'AndreiIonita\\BladeRemixIcon\\' => 28,
         ),
     );
 
@@ -529,10 +525,6 @@ class ComposerStaticInit58354dfdb16c6b8aa418f6d9959355fe
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
-        'Davidhsianturi\\BladeBootstrapIcons\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/davidhsianturi/blade-bootstrap-icons/src',
-        ),
         'Database\\Seeders\\' => 
         array (
             0 => __DIR__ . '/../..' . '/database/seeders',
@@ -559,10 +551,6 @@ class ComposerStaticInit58354dfdb16c6b8aa418f6d9959355fe
         array (
             0 => __DIR__ . '/..' . '/brick/math/src',
         ),
-        'BladeUI\\Icons\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src',
-        ),
         'ArchTech\\Enums\\' => 
         array (
             0 => __DIR__ . '/..' . '/archtechx/enums/src',
@@ -571,10 +559,6 @@ class ComposerStaticInit58354dfdb16c6b8aa418f6d9959355fe
         array (
             0 => __DIR__ . '/../..' . '/app',
             1 => __DIR__ . '/..' . '/laravel/pint/app',
-        ),
-        'AndreiIonita\\BladeRemixIcon\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/andreiio/blade-remix-icon/src',
         ),
     );
 
@@ -589,7 +573,6 @@ class ComposerStaticInit58354dfdb16c6b8aa418f6d9959355fe
     );
 
     public static $classMap = array (
-        'AndreiIonita\\BladeRemixIcon\\BladeRemixIconServiceProvider' => __DIR__ . '/..' . '/andreiio/blade-remix-icon/src/BladeRemixIconServiceProvider.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Enums\\UserRole' => __DIR__ . '/../..' . '/app/Enums/UserRole.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
@@ -638,18 +621,6 @@ class ComposerStaticInit58354dfdb16c6b8aa418f6d9959355fe
         'ArchTech\\Enums\\PHPStan\\InvokableCases\\StaticInvokableCaseMethodReflection' => __DIR__ . '/..' . '/archtechx/enums/src/PHPStan/InvokableCases/StaticInvokableCaseMethodReflection.php',
         'ArchTech\\Enums\\Values' => __DIR__ . '/..' . '/archtechx/enums/src/Values.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
-        'BladeUI\\Icons\\BladeIconsServiceProvider' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/BladeIconsServiceProvider.php',
-        'BladeUI\\Icons\\Components\\Icon' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/Components/Icon.php',
-        'BladeUI\\Icons\\Components\\Svg' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/Components/Svg.php',
-        'BladeUI\\Icons\\Concerns\\RendersAttributes' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/Concerns/RendersAttributes.php',
-        'BladeUI\\Icons\\Console\\CacheCommand' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/Console/CacheCommand.php',
-        'BladeUI\\Icons\\Console\\ClearCommand' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/Console/ClearCommand.php',
-        'BladeUI\\Icons\\Exceptions\\CannotRegisterIconSet' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/Exceptions/CannotRegisterIconSet.php',
-        'BladeUI\\Icons\\Exceptions\\SvgNotFound' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/Exceptions/SvgNotFound.php',
-        'BladeUI\\Icons\\Factory' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/Factory.php',
-        'BladeUI\\Icons\\Generation\\IconGenerator' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/Generation/IconGenerator.php',
-        'BladeUI\\Icons\\IconsManifest' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/IconsManifest.php',
-        'BladeUI\\Icons\\Svg' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/Svg.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',
         'Brick\\Math\\BigInteger' => __DIR__ . '/..' . '/brick/math/src/BigInteger.php',
         'Brick\\Math\\BigNumber' => __DIR__ . '/..' . '/brick/math/src/BigNumber.php',
@@ -774,7 +745,6 @@ class ComposerStaticInit58354dfdb16c6b8aa418f6d9959355fe
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
         'Database\\Seeders\\ProductCategorySeeder' => __DIR__ . '/../..' . '/database/seeders/ProductCategorySeeder.php',
-        'Davidhsianturi\\BladeBootstrapIcons\\BladeBootstrapIconsServiceProvider' => __DIR__ . '/..' . '/davidhsianturi/blade-bootstrap-icons/src/BladeBootstrapIconsServiceProvider.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
         'DeepCopy\\Exception\\PropertyException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/PropertyException.php',

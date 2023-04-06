@@ -9,7 +9,7 @@
     </div>
     <div class="col-6">
         <a class="d-grid gap-2 d-md-flex justify-content-md-end" href="{{route('products.create')}}">
-        <button type="button" class="btn btn-primary"><x-ri-add-fill />
+        <button type="button" class="btn btn-primary">
 {{ __('Add') }}</button>
         </a>
     </div>
@@ -44,11 +44,11 @@
               </a>
               <a href="{{route('products.edit', $product->id)}}">
               <button class="btn btn-success btn-sm">
-              <x-bi-pencil-fill />
+                E
               </button>
               </a>
               <button class="btn btn-danger btn-sm delete" data-id="{{$product->id}}">
-              <x-bi-trash />
+                X
               </button>
             </td>
         </tr>
