@@ -34,10 +34,13 @@ class ShopController extends Controller
         }else{
             $products = $products->paginate(9);
         }
+        $meta_title=$categoryName;
+        $meta_description="Tutaj jest nasz bardzo specjalny pomysł na kategorię. Pozdrawiam z rodzinką.";
+        $meta_keywords="kategoria, motoryzacja, filtry, płyny, paski, klocki hamulcowe, układy wydechowe, wycieraczki samochodowe";
         return view('welcome')->with([
             'products'=>$products,
             'categories'=> ProductCategory::orderBy('name', 'ASC')->get(),
             'categoryName'=>$categoryName,
-    ]);
+    ])->with(compact('meta_title','meta_description','meta_keywords'));
     }
 }

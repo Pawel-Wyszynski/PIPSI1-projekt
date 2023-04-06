@@ -36,9 +36,12 @@ class WelcomeController extends Controller
                 'data' => $query->get()
             ]);
         }
+        $meta_title="Sklep Mechaniczne kształty";
+        $meta_description="Sklep z częściami samochodowymi w najlepszych cenach i z najszybszą dostawą";
+        $meta_keywords="sklep z częściami, sklep motoryzacyjny, części do Opla, części do Jaguara, opony, silnik, uszczelka pod głowicą,";
         return view("welcome", [
             'products' => Product::paginate(10),
             'categories'=> ProductCategory::orderBy('name', 'ASC')->get()
-        ]);
+        ])->with(compact('meta_title','meta_description','meta_keywords'));
     }
 }

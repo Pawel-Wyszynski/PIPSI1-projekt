@@ -591,6 +591,7 @@ class ComposerStaticInit58354dfdb16c6b8aa418f6d9959355fe
     public static $classMap = array (
         'AndreiIonita\\BladeRemixIcon\\BladeRemixIconServiceProvider' => __DIR__ . '/..' . '/andreiio/blade-remix-icon/src/BladeRemixIconServiceProvider.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'App\\Enums\\UserRole' => __DIR__ . '/../..' . '/app/Enums/UserRole.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',

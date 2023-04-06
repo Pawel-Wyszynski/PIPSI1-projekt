@@ -6,9 +6,23 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+    @if(!empty($meta_title))
+    <title>{{ $meta_title }}</title>
+    @else
     <title>{{ config('app.name', 'Laravel') }}</title>
+    @endif
 
+    @if(!empty($meta_description))
+        <meta name="description" content="{{ $meta_description }}">
+    @else
+        <meta name="description" content="To jest najlepszy sklep motoryzacyjny w sieci który umożliwi znalezienie każdej części w rozsądnej cenie.">
+    @endif
+
+    @if(!empty($meta_keywords))
+        <meta name="keywords" content="{{ $meta_keywords }}">
+    @else
+        <meta name="keywords" content="sklep z częściami, sklep motoryzacyjny, części do Opla, części do Jaguara, opony, silnik, uszczelka pod głowicą,">
+    @endif
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">

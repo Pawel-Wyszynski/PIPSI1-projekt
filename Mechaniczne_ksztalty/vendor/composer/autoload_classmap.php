@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'AndreiIonita\\BladeRemixIcon\\BladeRemixIconServiceProvider' => $vendorDir . '/andreiio/blade-remix-icon/src/BladeRemixIconServiceProvider.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
+    'App\\Enums\\UserRole' => $baseDir . '/app/Enums/UserRole.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',

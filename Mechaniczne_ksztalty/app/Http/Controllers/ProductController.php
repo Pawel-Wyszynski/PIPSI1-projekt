@@ -60,10 +60,15 @@ class ProductController extends Controller
      */
     public function show(Product $product): View
     {
+        $meta_title=$product->name;
+        $meta_description=$product->description;
+        $meta_category=$product->category->name;
+        $meta_keywords="$meta_title,  $meta_description, $meta_category";
+        
         return view("products.show", [
             'product' => $product,
             'categories' => ProductCategory::all()
-        ]);
+        ])->with(compact('meta_title','meta_description','meta_keywords'));
     }
 
     /**
