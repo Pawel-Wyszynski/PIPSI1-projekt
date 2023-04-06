@@ -2,6 +2,9 @@
 
 @section('content')
 <div class="container">
+<div class="col-6">
+        <h1><i class="fa-solid fa-users"></i></i>{{ __('Users list') }}</h1>
+  </div>
 <table class="table table-hover">
 <thead>
     <tr>
@@ -23,7 +26,7 @@
             <td>{{$user->phone_number}}</td>
             <td>
               <button class="btn btn-danger btn-sm delete" data-id="{{$user->id}}">
-                X
+              <i class="fa-solid fa-ban"></i>
               </button>
             </td>
         </tr>

@@ -23,6 +23,8 @@
         "vite": "^4.1.4"
     },
     "dependencies": {
+        "@fortawesome/fontawesome-free": "^6.4.0",
+        "font-awesome": "^4.7.0",
         "jquery": "^3.6.4",
         "lodash": "^4.17.21",
         "popper.js": "^1.16.1",

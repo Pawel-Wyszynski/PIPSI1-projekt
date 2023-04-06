@@ -5,11 +5,11 @@
   @include('helpers.messages')
   <div class="row">
     <div class="col-6">
-        <h1>{{ __('Products list') }}</h1>
+        <h1><i class="fa-solid fa-gears"></i>{{ __('Products list') }}</h1>
     </div>
     <div class="col-6">
         <a class="d-grid gap-2 d-md-flex justify-content-md-end" href="{{route('products.create')}}">
-        <button type="button" class="btn btn-primary">
+        <button type="button" class="btn btn-primary"><i class="fa-solid fa-plus"></i>
 {{ __('Add') }}</button>
         </a>
     </div>
@@ -39,16 +39,16 @@
             <td>
             <a href="{{route('products.show', $product->id)}}">
               <button class="btn btn-primary btn-sm">
-                S
+              <i class="fas fa-search"></i>
               </button>
               </a>
               <a href="{{route('products.edit', $product->id)}}">
               <button class="btn btn-success btn-sm">
-                E
+              <i class="fa-solid fa-pen"></i>
               </button>
               </a>
               <button class="btn btn-danger btn-sm delete" data-id="{{$product->id}}">
-                X
+              <i class="fa-regular fa-trash-can"></i>
               </button>
             </td>
         </tr>
