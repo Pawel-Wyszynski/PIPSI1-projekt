@@ -28,6 +28,7 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/55cdc3e126.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -63,6 +64,17 @@
                                 </li>
                             @endif
                         @else
+    <div class="row">
+        <div class="col-lg-12 col-sm-12 col-12">
+            <div class="dropdown">
+            <a href="{{ route('cart') }}">
+                <button type="button" class="btn btn-dark" data-toggle="dropdown">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart <span class="badge badge-pill badge-danger">{{ count((array) session('cart')) }}</span>
+                </button>
+            </a>
+                </div>
+            </div>
+        </div>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
@@ -73,6 +85,7 @@
                                         <a class="dropdown-item" href="/users/list">{{ __('Users') }}</a>
                                         <a class="dropdown-item" href="{{ route('products.index') }}">{{ __('Products') }}</a>
                                     @endcan
+                                    
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -90,7 +103,9 @@
             </div>
         </nav>
 
+        
         <main class="py-4">
+        @include('helpers.messages')
             @yield('content')
         </main>
     </div>
@@ -98,5 +113,6 @@
     <script type="text/javascript">
     @yield('javascript')
     </script>
+    @yield('scripts')
 </body>
 </html>

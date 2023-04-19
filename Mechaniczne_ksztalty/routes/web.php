@@ -32,6 +32,12 @@ Route::middleware(['auth', 'verified'])->group(function() {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/shop', [ShopController::class, 'index'])->name('shop.index');
     Route::get('/products/{product}', [ProductController::class, 'show'])->name('products.show')->middleware('auth');
+
+    Route::get('cart', [ProductController::class, 'cart'])->name('cart');
+    Route::get('add-to-cart/{id}', [ProductController::class, 'addToCart'])->name('add_to_cart');
+    Route::patch('update-cart', [ProductController::class, 'update_cart'])->name('update_cart');
+    Route::delete('remove-from-cart', [ProductController::class, 'remove'])->name('remove_from_cart');
+
 });
 Route::get('/hello', [HelloWorldController::class, 'show']);
 
