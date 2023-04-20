@@ -60,7 +60,7 @@
 </div>
 @endsection
 @section('javascript')
-    $(function() {
+     $(function() {
         $('.delete').click(function() {
 
           Swal.fire({
@@ -79,7 +79,14 @@
                 url: "http://shop.test/products/" + $(this).data("id")
               })
               .done(function(response) {
-                window.location.reload();
+                Swal.fire(
+              '{{ __('Deleted!') }}',
+              '{{ __('Your item has been deleted.') }}',
+              'success'
+
+            ).then((result) => {
+              window.location.reload();
+            });
             })
             .fail(function(response) {
               Swal.fire('Oops...','Something went wrong!','error');

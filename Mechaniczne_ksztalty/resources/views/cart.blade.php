@@ -74,25 +74,59 @@
         });
     });
    
-    $(".cart_remove").click(function (e) {
-        e.preventDefault();
-   
-        var ele = $(this);
-   
-        if(confirm("Do you really want to remove?")) {
-            $.ajax({
-                url: '{{ route('remove_from_cart') }}',
-                method: "DELETE",
-                data: {
-                    _token: '{{ csrf_token() }}', 
-                    id: ele.parents("tr").attr("data-id")
-                },
-                success: function (response) {
-                    window.location.reload();
-                }
+    $(function() {
+  $('.cart_remove').click(function(e) {
+    e.preventDefault();
+
+    var ele = $(this);
+
+    Swal.fire({
+        title: '{{ __('Are you sure?') }}',
+            text: "{{ __('You will not be able to revert this!') }}",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: '{{ __('Yes') }}',
+            cancelButtonText: '{{ __('Cancel') }}'
+
+    }).then((result) => {
+      if (result.isConfirmed) {
+
+        $.ajax({
+
+          url: '{{ route('remove_from_cart') }}',
+          method: 'DELETE',
+
+          data: {
+            _token: '{{ csrf_token() }}',
+            id: ele.parents('tr').attr('data-id')
+          },
+
+          success: function(response) {
+            Swal.fire(
+              '{{ __('Deleted!') }}',
+              '{{ __('Your item has been deleted.') }}',
+              'success'
+
+            ).then((result) => {
+              window.location.reload();
             });
-        }
+          },
+
+          error: function(response) {
+            Swal.fire(
+              'Oops...',
+              'Something went wrong!',
+              'error'
+            );
+          }
+        });
+      }
     });
+  });
+});
+
    
 </script>
 @endsection

@@ -56,7 +56,14 @@
                 url: "http://shop.test/users/" + $(this).data("id")
               })
               .done(function(response) {
-                window.location.reload();
+                Swal.fire(
+              '{{ __('Deleted!') }}',
+              '{{ __('User has been deleted.') }}',
+              'success'
+
+            ).then((result) => {
+              window.location.reload();
+            });
             })
             .fail(function(response) {
               Swal.fire('Oops...','Something went wrong!','error');

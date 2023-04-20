@@ -25,7 +25,7 @@
                             </h5>
                             <a href="{{ route('add_to_cart', $product->id) }}" >
                             <button class="btn btn-success btn-sm add-cart-button"data-id="{{$product->id}}">
-                              <i class="fas fa-cart-plus"></i>Dodaj do koszyka </button>
+                              <i class="fas fa-cart-plus"></i> {{ __('Add to cart') }}</button>
                             </a>
                           </div>
                         </div>

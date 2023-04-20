@@ -69,7 +69,7 @@
             <div class="dropdown">
             <a href="{{ route('cart') }}">
                 <button type="button" class="btn btn-dark" data-toggle="dropdown">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart <span class="badge badge-pill badge-danger">{{ count((array) session('cart')) }}</span>
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i> {{ __('Cart') }}<span class="badge badge-pill badge-danger">{{ count((array) session('cart')) }}</span>
                 </button>
             </a>
                 </div>
