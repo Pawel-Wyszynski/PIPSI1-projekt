@@ -99,7 +99,7 @@ public function update_cart(Request $request, ValidateCartRequest $validateCartR
         $product->image_path = Storage::disk('public')->put('products', $request->file('image'));
         }
         $product->save();
-        return redirect(route('products.index'))->with('status','Produkt został zapisany!');
+        return redirect(route('products.index'))->with('status','Product successfully created!');
     }
 
     /**
@@ -148,7 +148,7 @@ public function update_cart(Request $request, ValidateCartRequest $validateCartR
             $product->image_path = Storage::disk('public')->put('products', $request->file('image'));
         }
         $product->save();
-        return redirect(route('products.index'))->with('status','Produkt został zapisany!');
+        return redirect(route('products.index'))->with('status','Product successfully updated!');
     }
 
     /**

@@ -40,5 +40,6 @@ Route::middleware(['auth', 'verified'])->group(function() {
 
 });
 Route::get('/hello', [HelloWorldController::class, 'show']);
+Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'App\Http\Controllers\LanguageController@switchLang']);
 
 Auth::routes(['verify' => true]);

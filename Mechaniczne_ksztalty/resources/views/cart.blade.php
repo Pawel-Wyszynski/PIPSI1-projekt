@@ -4,11 +4,11 @@
 <table id="cart" class="table table-hover table-condensed">
     <thead>
         <tr>
-        <th style="width:50%">Product</th>
-            <th style="width:10%">Price</th>
-            <th style="width:8%">Quantity</th>
-            <th style="width:22%" class="text-center">Subtotal</th>
-            <th style="width:10%"></th>
+        <th style="width:50%">{{ __('Products') }}</th>
+            <th style="width:10%">{{ __('Price') }}</th>
+            <th style="width:8%">{{ __('Quantity') }}</th>
+            <th style="width:22%" class="text-center">{{ __('Subtotal') }}</th>
+            <th style="width:10%">{{ __('Delete') }}</th>
         </tr>
     </thead>
     <tbody>
@@ -27,13 +27,13 @@
                             </div>
                         </div>
                     </td>
-                    <td data-th="Price">${{ $details['price'] }}</td>
+                    <td data-th="Price">{{ $details['price'] }} PLN</td>
                     <td data-th="Quantity">
                         <input type="number" value="{{ $details['quantity'] }}" class="form-control quantity cart_update" min="1" />
                     </td>
-                    <td data-th="Subtotal" class="text-center">${{ $details['price'] * $details['quantity'] }}</td>
-                    <td class="actions" data-th="">
-                        <button class="btn btn-danger btn-sm cart_remove"><i class="fa fa-trash-o"></i> Delete</button>
+                    <td data-th="Subtotal" class="text-center">{{ $details['price'] * $details['quantity'] }} PLN</td>
+                    <td class="actions" data-th="Delete">
+                        <button class="btn btn-danger btn-sm cart_remove"><i class="fa fa-trash-o"></i></button>
                     </td>
                 </tr>
             @endforeach
@@ -41,12 +41,12 @@
     </tbody>
     <tfoot>
         <tr>
-            <td colspan="5" class="text-right"><h3><strong>Total ${{ $total }}</strong></h3></td>
+            <td colspan="5" class="text-end"><h3><strong>{{ __('Total:') }} {{ $total }} PLN</strong></h3></td>
         </tr>
         <tr>
-            <td colspan="5" class="text-right">
-                <a href="{{ url('/') }}" class="btn btn-danger"> <i class="fa fa-arrow-left"></i> Continue Shopping</a>
-                <button class="btn btn-success"><i class="fa fa-money"></i> Checkout</button>
+            <td colspan="5" class="text-end">
+                <a href="{{ url('/') }}" class="btn btn-danger"> <i class="fa fa-arrow-left"></i> {{ __('Continue Shopping') }}</a>
+                <button class="btn btn-success"><i class="fa fa-money"></i> {{ __('Checkout') }}</button>
             </td>
         </tr>
     </tfoot>
